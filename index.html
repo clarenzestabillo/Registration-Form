@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="registration.css" />
+</head>
+<body>
+  <form id="registrationForm">
+    <h1>Registration Form</h1>
+
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" required placeholder="Enter your name"/>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" required placeholder="Enter your email"/>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" required placeholder="Enter your password"/>
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" required placeholder="Enter your phone number"/>
+
+    <label>Gender</label>
+    <div class="gender-group">
+      <label><input type="radio" name="gender" value="Male" required /> Male</label>
+      <label><input type="radio" name="gender" value="Female" required /> Female</label>
+      <label><input type="radio" name="gender" value="Other" required /> Other</label>
+    </div>
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" required/>
+
+    <label for="course">Course/Program</label>
+    <select id="course" required>
+      <option value="">Select a course</option>
+      <option value="BSIT">BS Information Technology</option>
+      <option value="BSCS">BS Computer Science</option>
+      <option value="BEED">BS Architecture</option>
+      <option value="BEED">BS Psychology</option>
+      <option value="BEED">BS Medical Technology</option>
+      <option value="BEED">BS Nursing</option>
+    </select>
+
+    <label>
+      <input type="checkbox" id="terms" required />
+      I accept the Terms and Conditions
+    </label>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="registration.js"></script>
+</body>
+</html>
